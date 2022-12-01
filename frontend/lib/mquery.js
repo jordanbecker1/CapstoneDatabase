@@ -1,0 +1,21 @@
+export const MEMBER_QUERY =`
+query{
+  members{
+    data{
+      attributes{
+      	name
+        age
+        profilepicture{
+          data{
+            attributes{
+              formats
+            }
+          }
+        }
+        slug
+        description
+      }
+    }
+  }
+}
+`;
